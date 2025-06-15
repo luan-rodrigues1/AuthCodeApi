@@ -16,14 +16,14 @@ app.use(express.json());
 
 AppDataSource.initialize()
   .then(() => {
-    console.log("Banco de dados conectado com sucesso!");
+    console.info("Database connected successfully!");
   })
   .catch((error) => {
-    console.error("Erro ao conectar com o banco de dados:", error);
+    console.error("Error connecting to the database:", error);
   });
 
 app.get('/', (req, res) => {
-  res.json({ message: 'API funcionando!' });
+  res.json({ message: 'API running!' });
 });
 
 app.post('/auth/send-code', validateRequest(sendCodeSchema), sendCodeController);
@@ -34,5 +34,5 @@ app.use(errorHandler);
 
 const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
-  console.log(`Servidor rodando na porta ${PORT}`);
+  console.info(`Server running on port ${PORT}`);
 });

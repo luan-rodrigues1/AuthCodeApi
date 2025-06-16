@@ -2,11 +2,16 @@
 
 Esta é uma API de autenticação desenvolvida com Node.js, TypeScript, Express e TypeORM.
 
+Esta é uma aplicação Full Stack.
+
+🔗 Acesse o Front-end através dos links abaixo:
+- **Repositório GitHub:** [AuthCodeApi](https://github.com/luan-rodrigues1/AuthCodeApi)
+
 ## Pré-requisitos
 
-- Node.js (versão 14 ou superior)
-- npm (gerenciador de pacotes do Node.js)
-- MySQL ou PostgreSQL (banco de dados)
+- Node.js
+- npm
+- MySQL
 
 ## Instalação
 
@@ -88,7 +93,7 @@ src/
   ├── migrations/     # Arquivos de migração
   ├── routes/         # Rotas da API
   ├── services/       # Serviços da aplicação
-  ├── data-source.ts  # Configuração do TypeORM
+  ├── data-source.ts  # Configuração de conexão com o banco
   └── index.ts        # Ponto de entrada da aplicação
 ```
 
@@ -98,6 +103,6 @@ src/
 - TypeScript
 - Express
 - TypeORM
-- PostgreSQL/MySQL
+- MySQL
 - Zod (validação de dados)
 - Docker

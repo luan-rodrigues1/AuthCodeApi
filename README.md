@@ -2,11 +2,20 @@
 
 Esta é uma API de autenticação desenvolvida com Node.js, TypeScript, Express e TypeORM.
 
-Esta é uma aplicação Full Stack.
+Link da API em produção:  
+➡️ https://authcode-api-77008956635.us-central1.run.app  
 
-🔗 Acesse o Front-end através dos links abaixo:
+Acesse a doc para fazer requisições diretamente:  
+➡️ [Ir para a documentação da API](#documentação-da-api)  
 
-- **Repositório GitHub:** [AuthCodeApi](https://github.com/luan-rodrigues1/AuthCodeApi)
+
+Esta é uma aplicação Full Stack, Acesse o Front-end através dos links abaixo: 
+
+Link do repositório GitHub:   
+➡️ [Ir para o repositório](https://github.com/luan-rodrigues1/AuthCodeApi)  
+
+Link para instalar o arquivo .APK:  
+➡️ [Ir para o dowload](https://drive.google.com/file/d/1pQ2Snv4_sRhIW8Iexz9xvwUmsUKm92PN/view?usp=sharing)  
 
 ## Pré-requisitos
 

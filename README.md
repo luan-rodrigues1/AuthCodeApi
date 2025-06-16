@@ -5,6 +5,7 @@ Esta é uma API de autenticação desenvolvida com Node.js, TypeScript, Express 
 Esta é uma aplicação Full Stack.
 
 🔗 Acesse o Front-end através dos links abaixo:
+
 - **Repositório GitHub:** [AuthCodeApi](https://github.com/luan-rodrigues1/AuthCodeApi)
 
 ## Pré-requisitos
@@ -106,3 +107,58 @@ src/
 - MySQL
 - Zod (validação de dados)
 - Docker
+
+## Documentação da API
+
+### Endpoints
+
+#### 1. Enviar Código de Verificação
+
+```http
+POST /auth/send-code
+```
+
+**Body:**
+
+```json
+{
+  "email": "usuario@exemplo.com"
+}
+```
+
+**Resposta (201 OK):**
+
+```json
+{
+  "message": "Code sent successfully!"
+}
+```
+
+#### 2. Verificar Código
+
+```http
+PATCH /auth/verify-code
+```
+
+**Body:**
+
+```json
+{
+  "email": "usuario@exemplo.com",
+  "code": "123456"
+}
+```
+
+**Resposta (200 OK):**
+
+```json
+{
+  "message": "Code verified successfully!"
+}
+```
+
+**Observações:**
+
+- O código de verificação deve conter exatamente 6 dígitos
+- O email deve ser válido
+- Todas as requisições devem incluir o header `Content-Type: application/json`

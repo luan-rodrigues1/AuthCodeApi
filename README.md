@@ -28,10 +28,11 @@ npm install
 
 ```env
 DB_HOST=localhost
-DB_PORT=5432 # para PostgreSQL ou 3306 para MySQL
+DB_PORT=3306 para MySQL
 DB_USERNAME=seu_usuario
 DB_PASSWORD=sua_senha
 DB_DATABASE=nome_do_banco
+PORT=8080 escolha a porta que a aplicação vai rodar
 ```
 
 ## Executando a aplicação
@@ -76,22 +77,6 @@ npm run migration:run
 
 ```bash
 npm run migration:revert
-```
-
-## Docker
-
-Para executar a aplicação usando Docker:
-
-1. Construa a imagem:
-
-```bash
-docker build -t authcodeapi .
-```
-
-2. Execute o container:
-
-```bash
-docker run -p 3000:3000 authcodeapi
 ```
 
 ## Estrutura do Projeto

@@ -169,5 +169,6 @@ PATCH /auth/verify-code
 **Observações:**
 
 - O código de verificação deve conter exatamente 6 dígitos
+- O código expira em 15 minutos
 - O email deve ser válido
 - Todas as requisições devem incluir o header `Content-Type: application/json`

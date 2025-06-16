@@ -60,7 +60,7 @@ Para executar a aplicação em modo de desenvolvimento com hot-reload:
 npm run dev
 ```
 
-### Modo de produção
+### Modo de produção  
 
 Para executar a aplicação em modo de produção:
 
@@ -68,7 +68,8 @@ Para executar a aplicação em modo de produção:
 npm start
 ```
 
-## Migrações do Banco de Dados
+## Migrações do Banco de Dados  
+⚠️ Importante: Se você estiver rodando a aplicação pela primeira vez, não se esqueça de executar as migrações pendentes para que o banco de dados seja atualizado corretamente.
 
 ### Criar uma nova migração
 
